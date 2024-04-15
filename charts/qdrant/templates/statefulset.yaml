@@ -37,6 +37,7 @@ spec:
       {{- if .Values.priorityClassName }}
       priorityClassName: "{{ .Values.priorityClassName }}"
       {{- end }}
+      shareProcessNamespace: {{ .Values.shareProcessNamespace }}
       initContainers:
       {{- if .Values.updateVolumeFsOwnership }}
       {{- if and .Values.containerSecurityContext .Values.containerSecurityContext.runAsUser }}

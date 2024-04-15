@@ -203,3 +203,5 @@ additionalVolumes: []
 additionalVolumeMounts: []
 # - name: volumeName
 #   mountPath: "/mount/path"
+
+shareProcessNamespace: false
